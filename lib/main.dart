@@ -14,7 +14,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(home: Builder(builder: (context) {
       return Scaffold(
-          appBar: AppBar(
+          appBar: AppBar( 
             title: const Text('Welcome to my Counter App'),
             backgroundColor: Colors.amber,
           ),

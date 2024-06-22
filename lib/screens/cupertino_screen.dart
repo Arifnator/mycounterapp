@@ -30,95 +30,100 @@ class _CounterAppCupertinoState extends State<CounterAppCupertino> {
                   backgroundColor: const Color.fromARGB(255, 18, 38, 60),
                   navigationBar: topBar(false),
                   child: Center(
-                    child: Stack(alignment: Alignment.center, children: [
-                      Image.asset(
-                        "assets/images/wallpaper.jpeg",
-                        fit: BoxFit.cover,
-                        // opacity: const AlwaysStoppedAnimation(.6),
-                      ),
-                      Positioned(
-                        bottom: 120,
-                        child: Stack(
-                          alignment: Alignment.center,
-                          children: [
-                            Image.asset("assets/images/counter2.png",
-                                width: 300),
-                            Positioned(
-                              top: 85,
-                              width: 136,
-                              height: 55,
-                              child: Container(
-                                decoration: const BoxDecoration(
-                                  color: Color.fromARGB(255, 0, 0, 0),
+                    child: Stack(
+                        fit: StackFit.expand,
+                        alignment: Alignment.center,
+                        children: [
+                          Image.asset(
+                            "assets/images/wallpaper.jpeg",
+                            fit: BoxFit.cover,
+                            // opacity: const AlwaysStoppedAnimation(.6),
+                          ),
+                          Positioned(
+                            bottom: 200,
+                            child: Stack(
+                              alignment: Alignment.center,
+                              children: [
+                                Image.asset("assets/images/counter2.png",
+                                    width: 300),
+                                Positioned(
+                                  top: 85,
+                                  width: 136,
+                                  height: 55,
+                                  child: Container(
+                                    decoration: const BoxDecoration(
+                                      color: Color.fromARGB(255, 0, 0, 0),
+                                    ),
+                                  ),
                                 ),
-                              ),
-                            ),
-                            Positioned(
-                                right: 85,
-                                top: 94,
-                                child: counterText(50, Colors.white)),
-                            Positioned(
-                              bottom: 50,
-                              width: 136,
-                              height: 55,
-                              child: Container(
-                                alignment: Alignment.center,
-                                decoration: const BoxDecoration(
-                                    color: Color.fromRGBO(63, 61, 61, 1)),
-                                child: const Text(
-                                  "Arifmetric Counter",
-                                  style: TextStyle(
-                                      fontSize: 15,
-                                      color:
-                                          Color.fromARGB(255, 134, 134, 134)),
+                                Positioned(
+                                    right: 85,
+                                    top: 94,
+                                    child: counterText(50, Colors.white)),
+                                Positioned(
+                                  bottom: 50,
+                                  width: 136,
+                                  height: 55,
+                                  child: Container(
+                                    alignment: Alignment.center,
+                                    decoration: const BoxDecoration(
+                                        color: Color.fromRGBO(63, 61, 61, 1)),
+                                    child: const Text(
+                                      "Arifmetric Counter",
+                                      style: TextStyle(
+                                          fontSize: 15,
+                                          color: Color.fromARGB(
+                                              255, 134, 134, 134)),
+                                    ),
+                                  ),
                                 ),
-                              ),
+                                Positioned(
+                                  top: 40,
+                                  right: 46,
+                                  height: 8,
+                                  width: 25,
+                                  child: GestureDetector(
+                                    onTap: () {
+                                      setState(() {
+                                        resetCounter();
+                                      });
+                                    },
+                                  ),
+                                )
+                              ],
                             ),
-                            Positioned(
-                              top: 40,
-                              right: 46,
-                              height: 8,
-                              width: 25,
+                          ),
+                          Positioned(
+                              bottom: 100,
                               child: GestureDetector(
-                                onTap: () {
-                                  setState(() {
-                                    resetCounter();
-                                  });
-                                },
-                              ),
-                            )
-                          ],
-                        ),
-                      ),
-                      Positioned(
-                          bottom: 30,
-                          child: GestureDetector(
-                              onTap: () {
-                                setState(() {
-                                  incrementCounter();
-                                });
-                              },
-                              child: Container(
-                                height: 60,
-                                width: 100,
-                                alignment: Alignment.center,
-                                decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(20),
-                                    color: const Color.fromRGBO(63, 61, 61, 1),
-                                    boxShadow: const [
-                                      BoxShadow(
-                                          color: Color.fromRGBO(63, 61, 61, 1),
-                                          blurRadius: 3,
-                                          spreadRadius: 3,
-                                          offset: Offset(2, 2))
-                                    ]),
-                                child: const Text(
-                                  "+",
-                                  style: TextStyle(
-                                      fontSize: 30, color: Colors.white),
-                                ),
-                              )))
-                    ]),
+                                  onTap: () {
+                                    setState(() {
+                                      incrementCounter();
+                                    });
+                                  },
+                                  child: Container(
+                                    height: 60,
+                                    width: 100,
+                                    alignment: Alignment.center,
+                                    decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(20),
+                                        color:
+                                            const Color.fromRGBO(63, 61, 61, 1),
+                                        boxShadow: const [
+                                          BoxShadow(
+                                              color:
+                                                  Color.fromRGBO(63, 61, 61, 1),
+                                              blurRadius: 3,
+                                              spreadRadius: 3,
+                                              offset: Offset(2, 2))
+                                        ]),
+                                    child: const Text(
+                                      "+",
+                                      style: TextStyle(
+                                          fontSize: 30, color: Colors.white),
+                                    ),
+                                  )))
+                        ]),
                   ),
                 );
               },
