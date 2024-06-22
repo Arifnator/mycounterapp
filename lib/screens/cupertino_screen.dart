@@ -94,35 +94,35 @@ class _CounterAppCupertinoState extends State<CounterAppCupertino> {
                             ),
                           ),
                           Positioned(
-                              bottom: 100,
-                              child: GestureDetector(
-                                  onTap: () {
-                                    setState(() {
-                                      incrementCounter();
-                                    });
-                                  },
-                                  child: Container(
-                                    height: 60,
-                                    width: 100,
-                                    alignment: Alignment.center,
-                                    decoration: BoxDecoration(
-                                        borderRadius: BorderRadius.circular(20),
-                                        color:
-                                            const Color.fromRGBO(63, 61, 61, 1),
-                                        boxShadow: const [
-                                          BoxShadow(
-                                              color:
-                                                  Color.fromRGBO(63, 61, 61, 1),
-                                              blurRadius: 3,
-                                              spreadRadius: 3,
-                                              offset: Offset(2, 2))
-                                        ]),
-                                    child: const Text(
-                                      "+",
-                                      style: TextStyle(
-                                          fontSize: 30, color: Colors.white),
-                                    ),
-                                  )))
+                            bottom: 100,
+                            child: GestureDetector(
+                              onTap: () {
+                                setState(() {
+                                  incrementCounter();
+                                });
+                              },
+                              child: Container(
+                                height: 60,
+                                width: 100,
+                                alignment: Alignment.center,
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(20),
+                                    color: const Color.fromRGBO(63, 61, 61, 1),
+                                    boxShadow: const [
+                                      BoxShadow(
+                                          color: Color.fromRGBO(63, 61, 61, 1),
+                                          blurRadius: 3,
+                                          spreadRadius: 3,
+                                          offset: Offset(2, 2))
+                                    ]),
+                                child: const Text(
+                                  "+",
+                                  style: TextStyle(
+                                      fontSize: 30, color: Colors.white),
+                                ),
+                              ),
+                            ),
+                          )
                         ]),
                   ),
                 );
