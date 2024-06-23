@@ -84,8 +84,10 @@ class _CounterAppCupertinoState extends State<CounterAppCupertino> {
                                   width: 25,
                                   child: GestureDetector(
                                     onTap: () {
-                                      setState(() {
-                                        resetCounter();
+                                      showResetAlert(false, context, () {
+                                        setState(() {
+                                          resetCounter();
+                                        });
                                       });
                                     },
                                   ),

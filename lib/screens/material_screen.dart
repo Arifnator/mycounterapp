@@ -68,8 +68,10 @@ class _CounterAppMaterialState extends State<CounterAppMaterial> {
                             bottom: 114,
                             child: GestureDetector(
                               onTap: () {
-                                setState(() {
-                                  resetCounter();
+                                showResetAlert(true, context, () {
+                                  setState(() {
+                                    resetCounter();
+                                  });
                                 });
                               },
                               child: Container(
