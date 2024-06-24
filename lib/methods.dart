@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:mycounterapp/screens/material_screen.dart';
 import 'package:mycounterapp/screens/cupertino_screen.dart';
 
-buttomBar(bool isMaterial, bool inHome, int index, BuildContext context,
+bottomBar(bool isMaterial, bool inHome, int index, BuildContext context,
     Color bgColor, Color selectedColor, Color unselectedColor) {
   if (isMaterial) {
     return BottomNavigationBar(

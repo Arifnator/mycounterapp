@@ -14,3 +14,9 @@ Zeitaufwand: ca. 15 Stunden (in meinem 33. Geburtstag!)
 
 - Increment über CupertinoButton ging irgenwie nicht, daher ein Container als Button
 - Arifmetisch ist ein gag zwischen unserer Akademie Klasse, weil ich Arif Heisse :)
+
+
+
+Hier die Widget Übersicht:
+
+![alt text](https://github.com/Arifnator/mycounterapp/widgets_uebersicht.png?raw=true)

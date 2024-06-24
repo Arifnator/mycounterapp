@@ -17,7 +17,7 @@ class _CounterAppMaterialState extends State<CounterAppMaterial> {
         return Scaffold(
           backgroundColor: Colors.black,
           appBar: topBar(true),
-          bottomNavigationBar: buttomBar(true, false, 1, context,
+          bottomNavigationBar: bottomBar(true, false, 1, context,
               const Color.fromARGB(255, 11, 40, 93), Colors.white, Colors.grey),
           body: Center(
             child: Stack(

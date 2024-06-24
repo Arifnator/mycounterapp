@@ -15,7 +15,7 @@ class _CounterAppCupertinoState extends State<CounterAppCupertino> {
   Widget build(BuildContext context) {
     return CupertinoApp(
       home: CupertinoTabScaffold(
-          tabBar: buttomBar(
+          tabBar: bottomBar(
               false,
               false,
               0,
