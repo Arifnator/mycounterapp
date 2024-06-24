@@ -19,4 +19,4 @@ Zeitaufwand: ca. 15 Stunden (in meinem 33. Geburtstag!)
 
 Hier die Widget Übersicht:
 
-![alt text](https://github.com/Arifnator/mycounterapp/widgets_uebersicht.png?raw=true)
+![alt text](https://github.com/Arifnator/mycounterapp/blob/main/widgets_uebersicht.png?raw=true)
