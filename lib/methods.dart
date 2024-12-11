@@ -113,10 +113,10 @@ topBar(bool isMaterial) {
     );
   } else {
     return CupertinoNavigationBar(
-      backgroundColor: const Color.fromARGB(255, 0, 0, 0).withOpacity(0.2),
+      backgroundColor:
+          const Color.fromARGB(255, 0, 0, 0).withValues(alpha: 0.2),
       middle: const Text("Counter App Cupertino Style",
           style: TextStyle(color: Colors.white)),
     );
   }
 }
-

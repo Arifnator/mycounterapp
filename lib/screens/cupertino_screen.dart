@@ -20,7 +20,7 @@ class _CounterAppCupertinoState extends State<CounterAppCupertino> {
               false,
               0,
               context,
-              const Color.fromARGB(255, 0, 0, 0).withOpacity(0.2),
+              const Color.fromARGB(255, 0, 0, 0).withValues(alpha: 0.2),
               Colors.white,
               Colors.grey),
           tabBuilder: (BuildContext context, int index) {
